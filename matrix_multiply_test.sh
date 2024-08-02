@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Compile the C program
-gcc main.c -o matrix_multiply -lm
+# Compile the C program with -O3 optimization
+gcc -O3 main.c -o matrix_multiply -lm
 
 # Sizes of the matrices to multiply
 sizes=("32 32 32" "64 64 64" "128 128 128" "256 256 256" "512 512 512" "1024 1024 1024")
